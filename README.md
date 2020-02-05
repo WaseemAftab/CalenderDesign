@@ -6,7 +6,9 @@ Very helpful cardview example for beginners. using linear layout try to teach th
 you can select and unselect each of the week day ad also added time text inside the each day. to control the timings of every day schedule.
 drawable/Selector are used with items and sub items with 3 pics added in one selector. day_On , day_off and Tik_Mark image also.
 
- """ <selector xmlns:android="http://schemas.android.com/apk/res/android">
+```xml
+<myxml>
+      <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_checked="true" >
         <layer-list>
             <item android:drawable="@drawable/sun_on"/>
@@ -16,7 +18,11 @@ drawable/Selector are used with items and sub items with 3 pics added in one sel
         </layer-list>
     </item>
     <item android:drawable="@drawable/sun_off" android:state_checked="false" />
-</selector> """
+</selector>
+</myxml>
+```
+
+
 
 ### Preview
 
