@@ -24,5 +24,5 @@ drawable/Selector are used with items and sub items with 3 pics added in one sel
 
 ### Preview
 
-<img src="https://github.com/Wassi01/CardView-CalenderDesign/blob/master/images/Screenshot_2020-02-05-17-23-56.png" width="250" />
-<img src="https://github.com/Wassi01/CardView-CalenderDesign/blob/master/images/Screenshot_2020-02-05-17-24-09.png" width="250" />
+<img src="https://github.com/Wassi01/CardView-CalenderDesign/blob/master/images/Screenshot_2020-02-05-17-23-56.png" width="250" /> <img src="https://github.com/Wassi01/CardView-CalenderDesign/blob/master/images/Screenshot_2020-02-05-17-24-09.png" width="250" />
+
