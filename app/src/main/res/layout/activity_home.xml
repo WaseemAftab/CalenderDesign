@@ -22,48 +22,10 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card1"
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:layout_margin="4dp"
-                app:cardCornerRadius="4dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/triangle" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:layout_centerHorizontal="true"
-                        android:text="Get the Car Keys and run!"
-                        android:textColor="#000000"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="20dp"
-                        android:layout_alignParentBottom="true"
-                        android:layout_centerHorizontal="true"
-                        android:text="By Bhimsoft" />
-
-                </RelativeLayout>
-
-
-            </androidx.cardview.widget.CardView>
-
             <androidx.cardview.widget.CardView
                 android:id="@+id/card2"
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="150dp"
                 android:layout_below="@+id/card1"
                 android:layout_margin="4dp"
                 app:cardCornerRadius="4dp">
@@ -74,35 +36,47 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/School_text"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="4dp"
-                        android:text="School Time"
-                        android:textColor="#37474F"
-                        android:textStyle="bold" />
+                        android:layout_marginTop="6dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/info_selector"
+                            android:button="@null" />
+
+                        <TextView
+                            android:id="@+id/School_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:text="School Time"
+                            android:textColor="#37474F" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="10dp"
                         android:orientation="horizontal"
                         android:weightSum="7">
 
                         <CheckBox
 
                             android:id="@+id/img1"
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
                             android:layout_weight="1"
                             android:background="@drawable/checkbox_selector"
                             android:button="@null" />
 
                         <CheckBox
                             android:id="@+id/img2"
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
                             android:layout_weight="1"
                             android:background="@drawable/mon_selector"
                             android:button="@null" />
@@ -110,8 +84,8 @@
                         <CheckBox
 
                             android:id="@+id/img3"
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
                             android:layout_weight="1"
                             android:background="@drawable/tue_selector"
                             android:button="@null" />
@@ -119,8 +93,8 @@
                         <CheckBox
 
                             android:id="@+id/img4"
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
                             android:layout_weight="1"
                             android:background="@drawable/wed_selector"
                             android:button="@null" />
@@ -128,8 +102,8 @@
                         <CheckBox
 
                             android:id="@+id/img5"
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
                             android:layout_weight="1"
                             android:background="@drawable/tue_selector"
                             android:button="@null" />
@@ -137,8 +111,8 @@
                         <CheckBox
 
                             android:id="@+id/img6"
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
                             android:layout_weight="1"
                             android:background="@drawable/fri_selector"
                             android:button="@null" />
@@ -146,8 +120,8 @@
                         <CheckBox
 
                             android:id="@+id/img7"
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
                             android:layout_weight="1"
                             android:background="@drawable/checkbox_selector"
                             android:button="@null" />
@@ -334,7 +308,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="150dp"
                 android:layout_margin="4dp"
                 app:cardCornerRadius="4dp">
 
@@ -344,74 +318,86 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/home_text"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="4dp"
-                        android:text="Homework Time"
-                        android:textColor="#37474F"
-                        android:textStyle="bold" />
+                        android:layout_marginTop="6dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/info_selector"
+                            android:button="@null" />
+
+                        <TextView
+                            android:id="@+id/home_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:text="Homework Time"
+                            android:textColor="#37474F" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="10dp"
                         android:orientation="horizontal"
                         android:weightSum="7">
 
                         <CheckBox
 
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
                             android:layout_weight="1"
                             android:background="@drawable/checkbox_selector"
                             android:button="@null" />
 
                         <CheckBox
 
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
                             android:layout_weight="1"
                             android:background="@drawable/mon_selector"
                             android:button="@null" />
 
                         <CheckBox
 
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
                             android:layout_weight="1"
                             android:background="@drawable/tue_selector"
                             android:button="@null" />
 
                         <CheckBox
 
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
                             android:layout_weight="1"
                             android:background="@drawable/wed_selector"
                             android:button="@null" />
 
                         <CheckBox
 
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
                             android:layout_weight="1"
                             android:background="@drawable/tue_selector"
                             android:button="@null" />
 
                         <CheckBox
 
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
                             android:layout_weight="1"
                             android:background="@drawable/fri_selector"
                             android:button="@null" />
 
                         <CheckBox
 
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
                             android:layout_weight="1"
                             android:background="@drawable/checkbox_selector"
                             android:button="@null" />
@@ -584,7 +570,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="150dp"
                 android:layout_margin="4dp"
                 app:cardCornerRadius="4dp">
 
@@ -594,77 +580,89 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/bed_text"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="4dp"
-                        android:text="Bed Time"
-                        android:textColor="#37474F"
-                        android:textStyle="bold" />
+                        android:layout_marginTop="6dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/info_selector"
+                            android:button="@null" />
+
+                        <TextView
+                            android:id="@+id/bed_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:text="Bed Time"
+                            android:textColor="#37474F" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="10dp"
                         android:orientation="horizontal"
                         android:weightSum="7">
 
                         <CheckBox
 
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
                             android:layout_weight="1"
                             android:background="@drawable/checkbox_selector"
                             android:button="@null" />
 
                         <CheckBox
 
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:button="@null"
-                            android:background="@drawable/mon_selector" />
+                            android:background="@drawable/mon_selector"
+                            android:button="@null" />
 
                         <CheckBox
 
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:button="@null"
-                            android:background="@drawable/tue_selector" />
+                            android:background="@drawable/tue_selector"
+                            android:button="@null" />
 
                         <CheckBox
 
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:button="@null"
-                            android:background="@drawable/wed_selector" />
+                            android:background="@drawable/wed_selector"
+                            android:button="@null" />
 
                         <CheckBox
 
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:button="@null"
-                            android:background="@drawable/tue_selector" />
+                            android:background="@drawable/tue_selector"
+                            android:button="@null" />
 
                         <CheckBox
 
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:button="@null"
-                            android:background="@drawable/fri_selector" />
+                            android:background="@drawable/fri_selector"
+                            android:button="@null" />
 
                         <CheckBox
 
-                            android:layout_width="0dp"
-                            android:layout_height="55dp"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
                             android:layout_weight="1"
-                            android:button="@null"
-                            android:background="@drawable/checkbox_selector" />
+                            android:background="@drawable/checkbox_selector"
+                            android:button="@null" />
 
 
                     </LinearLayout>
@@ -832,7 +830,55 @@
 
             </androidx.cardview.widget.CardView>
 
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:cropToPadding="true"
+                    android:src="@drawable/bottomlogo" />
+
+                <CheckBox
+                    android:layout_width="58dp"
+                    android:layout_height="29dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/toggle_selector"
+                    android:button="@null"
+                    android:cropToPadding="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/info_selector"
+                        android:button="@null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="4dp"
+                        android:text="Close Child's Device"
+                        android:textColor="#FFF"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
         </LinearLayout>
+
     </ScrollView>
 
 </RelativeLayout>

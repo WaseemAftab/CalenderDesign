@@ -9,9 +9,5 @@
 
         </layer-list>
     </item>
-
-
     <item android:drawable="@drawable/sun_off" android:state_checked="false" />
-
-
 </selector>
