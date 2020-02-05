@@ -3,10 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     style="@style/Theme.AppCompat.Light"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="80dp"
     android:background="@android:color/white"
     android:elevation="4dp"
     app:popupTheme="@style/Theme.AppCompat.Light">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Kid's time Out Controller"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:paddingTop="20dp"
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
 
 </androidx.appcompat.widget.Toolbar>

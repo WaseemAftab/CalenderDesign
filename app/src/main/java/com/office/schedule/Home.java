@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.CheckBox;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,24 +12,24 @@ import androidx.appcompat.widget.Toolbar;
 
 public class Home extends AppCompatActivity {
 
-    private ImageView sundayImg, mondayImg, tuesdayImg, wednesdayImg, thirsdayImg, fridayImg, saturdayImg;
+    private CheckBox sundayImg, mondayImg, tuesdayImg, wednesdayImg, thirsdayImg, fridayImg, saturdayImg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        sundayImg = (ImageView) findViewById(R.id.img1);
-        mondayImg = (ImageView) findViewById(R.id.img2);
-        tuesdayImg = (ImageView) findViewById(R.id.img3);
-        wednesdayImg = (ImageView) findViewById(R.id.img4);
-        thirsdayImg = (ImageView) findViewById(R.id.img5);
-        fridayImg = (ImageView) findViewById(R.id.img6);
-        saturdayImg = (ImageView) findViewById(R.id.img7);
+        sundayImg = (CheckBox) findViewById(R.id.img1);
+        mondayImg = (CheckBox) findViewById(R.id.img2);
+        tuesdayImg = (CheckBox) findViewById(R.id.img3);
+        wednesdayImg = (CheckBox) findViewById(R.id.img4);
+        thirsdayImg = (CheckBox) findViewById(R.id.img5);
+        fridayImg = (CheckBox) findViewById(R.id.img6);
+        saturdayImg = (CheckBox) findViewById(R.id.img7);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("Student");
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         sundayImg.setOnClickListener(new View.OnClickListener() {

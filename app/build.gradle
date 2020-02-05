@@ -17,6 +17,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    sourceSets {
+        main {
+            res {
+                srcDir 'src/main/res/drawable/images'
+            }
+        }
+    }
 }
 
 dependencies {
